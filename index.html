@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.body1 {
+			}
+		</style>
+	</head>
+	<!--红色 #FF0000 
+橙色 #FF7F00
+黄色 #FFFF00 
+绿色 #00FF00 
+青色 #00FFFF 
+蓝色 #0000FF
+紫色 #8B00FF-->
+
+	<body class="body1" id="bodya">
+		<script type="text/javascript">
+			var colors = [{
+				color: "#000"
+			}, {}, {
+				color: "#FFF"
+			}, {
+				color: "#000"
+			}, {
+				color: "#FFF"
+			}, {
+				color: "#000"
+			}, {
+				color: "#FFF"
+			}];
+			window.onload = function a() {
+				setTimeout("ys(1)", 100);
+
+			}
+
+			function ys(i) {
+				if(i > 7) i = 1;
+				var b = document.getElementById("bodya");
+				b.style.backgroundColor = colors[i - 1].color;
+				i++;
+				setTimeout("ys(" + i + ")", 1);
+
+			}
+		</script>
+	</body>
+
+</html>
