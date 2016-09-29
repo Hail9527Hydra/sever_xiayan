@@ -3,54 +3,45 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>adasd</title>
+
 		<style type="text/css">
 			* {
-				margin: 0;
+				width: 100%;
+				height: 100%;
 				padding: 0;
-			}
-			
-			.body1 {
+				margin: 0;
 			}
 		</style>
+
 	</head>
-	<!--红色 #FF0000 
-橙色 #FF7F00
-黄色 #FFFF00 
-绿色 #00FF00 
-青色 #00FFFF 
-蓝色 #0000FF
-紫色 #8B00FF-->
 
-	<body class="body1" id="bodya">
+	<body>
+
+		<div id="b" class="t"></div>
+
 		<script type="text/javascript">
-			var colors = [{
-				color: "#000"
-			}, {}, {
-				color: "#FFF"
-			}, {
-				color: "#000"
-			}, {
-				color: "#FFF"
-			}, {
-				color: "#000"
-			}, {
-				color: "#FFF"
-			}];
-			window.onload = function a() {
-				setTimeout("ys(1)", 100);
+			setTimeout("h(0)");
 
-			}
+			var e;
+			//			e = ["#f00", "#0f0", "#00f", "#0ff", "#f0f", "#ff0", "#fff", "#000", "#ccc", "#f05", ];
+			e = ["#aaa", "#bbb", "#ccc", "#ddd", "#eee", "#fff", "#f00", "#ff0", "#00f", "#0f0", ];
 
-			function ys(i) {
-				if(i > 7) i = 1;
-				var b = document.getElementById("bodya");
-				b.style.backgroundColor = colors[i - 1].color;
+			function h(i) {
+				if(i > 10) i = 0;
+				var r = parseInt(Math.random() * 10);
+				var g = parseInt(Math.random() * 10);
+				var b = parseInt(Math.random() * 10);
+				//				document.getElementById("b").innerHTML = a;
+				document.getElementById("b").style.backgroundColor = e[i];
+
+				//				document.getElementById("b").style.backgroundColor = "#" + r + g + b;
+
 				i++;
-				setTimeout("ys(" + i + ")", 1);
-
+				setTimeout("h(" + i + ")", 0);
 			}
 		</script>
+
 	</body>
 
 </html>
